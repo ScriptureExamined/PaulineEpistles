@@ -1733,3 +1733,26 @@ section {
     padding: 20px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 16px !important;
+  }
+
+  .section-content {
+    margin-bottom: 0 !important;
+  }
+
+  .section-content p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .section h2,
+  .section-title {
+    margin-bottom: 12px !important;
+  }
+
+  .section p {
+    margin-bottom: 12px !important;
+  }
+}
