@@ -1727,3 +1727,9 @@ section {
     padding-top: 140px !important;
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
