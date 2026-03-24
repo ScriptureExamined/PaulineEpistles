@@ -1762,3 +1762,15 @@ section {
     margin-top: 0 !important;
   }
 }
+
+@media (max-width: 768px) {
+  .about-approach .price-metals {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-approach .metal-item {
+    max-width: 400px;
+    width: 100%;
+  }
+}
