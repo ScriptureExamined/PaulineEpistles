@@ -465,6 +465,10 @@ body.menu-open {
   padding-top: 150px;
 }
 
+.about-hero .section-header {
+    margin-top: 0;
+}
+
 .stat-item {
 	text-align: left;
 }
@@ -1719,7 +1723,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .about-approach .price-metals {
-    grid-template-columns: 1fr;
+  .section.about-hero {
+    padding-top: 140px !important;
   }
 }
