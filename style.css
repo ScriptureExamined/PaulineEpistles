@@ -1904,3 +1904,7 @@ body {
 .h-captcha {
     text-align: center;
 }
+
+section {
+    scroll-margin-top: 100px;
+}
