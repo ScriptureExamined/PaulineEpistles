@@ -1847,3 +1847,49 @@ body {
     max-width: 100%;
   }
 }
+
+.contact-page .contact-form-wrap {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.contact-page .price-card {
+  width: 100%;
+}
+
+.contact-page .contact-form {
+  max-width: 650px;
+  margin: 30px auto 0;
+}
+
+.form-status-success,
+.form-status-error {
+  max-width: 650px;
+  margin: 24px auto 0;
+  padding: 14px 18px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.form-status-success {
+  border: 1px solid rgba(201, 169, 110, 0.45);
+  background: rgba(201, 169, 110, 0.08);
+}
+
+.form-status-error {
+  border: 1px solid rgba(180, 80, 80, 0.45);
+  background: rgba(180, 80, 80, 0.08);
+}
+
+.form-field-error {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .contact-page .contact-form {
+    max-width: 100%;
+  }
+}
