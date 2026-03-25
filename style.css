@@ -1893,3 +1893,9 @@ body {
     max-width: 100%;
   }
 }
+
+.captcha-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
