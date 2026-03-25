@@ -1899,3 +1899,7 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
+
+.h-captcha {
+  text-align: center;
+}
