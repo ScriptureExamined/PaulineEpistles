@@ -1800,3 +1800,30 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.thank-you-page .approach-card-wrap {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.thank-you-page .price-card {
+  width: 100%;
+}
+
+.thank-you-page .price-metals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .thank-you-page .price-metals {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .thank-you-page .metal-item {
+    max-width: 400px;
+    width: 100%;
+  }
+}
