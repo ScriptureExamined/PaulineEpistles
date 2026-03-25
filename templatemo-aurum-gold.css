@@ -360,7 +360,7 @@ body.menu-open {
 	display: flex;
 	align-items: center;
 	position: relative;
-	padding: 120px 0 80px;
+	padding: 160px 0 80px;
 	overflow: hidden;
 }
 
@@ -457,7 +457,7 @@ body.menu-open {
 }
 
 .about-hero {
-  padding-top: 150px;
+  padding-top: 0px;
 }
 
 .about-hero .section-header {
@@ -1772,4 +1772,26 @@ section {
 
 .hero-actions {
   margin-top: 30px;
+}
+
+body {
+  padding-top: 120px; /* adjust to match nav height */
+}
+
+.books-page .hero {
+  min-height: auto;
+  align-items: flex-start;
+  padding: 0 0 80px;
+}
+
+.books-page .section-header {
+  margin-top: 0;
+}
+
+.hero {
+  min-height: 100vh;
+}
+
+.books-page .books-hero {
+  padding-top: 0;
 }
