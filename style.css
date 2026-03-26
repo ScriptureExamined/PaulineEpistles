@@ -1661,3 +1661,26 @@ body.modal-open {
 .purpose-section {
     padding-top: 32px;
 }
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 60px;
+    align-items: center;
+}
+
+.feature-content {
+    max-width: 600px;
+}
+
+.feature-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
