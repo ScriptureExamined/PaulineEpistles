@@ -1684,3 +1684,65 @@ body.modal-open {
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+.book-cover-frame {
+    padding: 12px;
+    border: 1px solid var(--gold-primary);
+    border-radius: 14px;
+    background: rgba(184, 134, 11, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+.book-cover {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        align-items: start;
+    }
+
+    .feature-visual {
+        order: -1;
+        justify-content: center;
+    }
+
+    .feature-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .book-cover-frame {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .book-cover {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .book-actions {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .book-actions .btn {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .featured-book {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+}
