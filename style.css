@@ -1657,3 +1657,7 @@ body.modal-open {
 .services {
     padding-bottom: 0;
 }
+
+.purpose-section {
+    padding-top: 32px;
+}
