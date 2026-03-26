@@ -2041,3 +2041,75 @@ section {
     letter-spacing: 0.03em;
 }
 
+.sample-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 9998;
+}
+
+.sample-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: min(680px, calc(100% - 32px));
+    transform: translate(-50%, -50%) scale(0.96);
+    background: var(--bg-dark, #111);
+    border: 1px solid rgba(201, 169, 110, 0.25);
+    border-radius: 10px;
+    padding: 32px 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 9999;
+}
+
+.sample-modal.is-open,
+.sample-modal-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sample-modal.is-open {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.sample-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.sample-modal-content {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.sample-modal-intro {
+    margin: 14px 0 24px;
+    opacity: 0.85;
+}
+
+.sample-outline {
+    text-align: left;
+}
+
+.sample-outline p {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+body.modal-open {
+    overflow: hidden;
+}

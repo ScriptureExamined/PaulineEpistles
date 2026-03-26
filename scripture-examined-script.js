@@ -208,5 +208,42 @@ function updatePrices() {
    // This is just for visual effect - in production, connect to real API
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const openBtn = document.getElementById("viewSampleBtn");
+  const modal = document.getElementById("sampleModal");
+  const overlay = document.getElementById("sampleModalOverlay");
+  const closeBtn = document.getElementById("sampleModalClose");
+
+  if (!openBtn || !modal || !overlay || !closeBtn) {
+    console.log("Modal elements not found");
+    return;
+  }
+
+  function openModal(event) {
+    event.preventDefault();
+    modal.classList.add("is-open");
+    overlay.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  function closeModal() {
+    modal.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  openBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  });
+});
+
 // Update prices every 30 seconds (demo)
 setInterval(updatePrices, 30000);
