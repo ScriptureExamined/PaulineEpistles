@@ -1799,3 +1799,22 @@ body.modal-open {
         margin-bottom: 14px;
     }
 }
+
+.featured-book-grid {
+    align-items: center;
+}
+
+.book-cover-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.book-cover {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 8px;
+}
