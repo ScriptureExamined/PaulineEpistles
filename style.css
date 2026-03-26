@@ -1746,3 +1746,56 @@ body.modal-open {
         padding-bottom: 40px;
     }
 }
+
+@media (max-width: 480px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+
+    .feature-visual {
+        order: -1;
+    }
+
+    .book-cover-frame {
+        max-width: 220px;
+        width: 100%;
+        padding: 8px;
+        margin: 0 auto;
+    }
+
+    .book-cover {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .book-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .book-actions .btn {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .featured-book {
+        padding-top: 20px;
+        padding-bottom: 32px;
+    }
+
+    .feature-content .section-title,
+    .feature-content .book-title {
+        margin-bottom: 12px;
+    }
+
+    .book-description p {
+        margin-bottom: 14px;
+    }
+}
