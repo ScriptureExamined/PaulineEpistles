@@ -2113,3 +2113,7 @@ section {
 body.modal-open {
     overflow: hidden;
 }
+
+.services {
+    padding-bottom: 0;
+}
