@@ -1815,3 +1815,33 @@ body.modal-open {
         /* Centers buttons */
     }
 }
+
+/* Contact Form Feedback Styling */
+#form-success,
+#form-error {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#form-success {
+    background-color: rgba(74, 124, 89, 0.2);
+    /* Subtle success green */
+    border: 1px solid var(--success);
+    color: #a8d5ba;
+}
+
+#form-error {
+    background-color: rgba(139, 58, 58, 0.2);
+    /* Subtle danger red */
+    border: 1px solid var(--danger);
+    color: #f2a7a7;
+}
+
+/* Ensure the submit button shows it is unclickable when processing */
+#contact-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
