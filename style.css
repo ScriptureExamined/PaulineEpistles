@@ -1845,3 +1845,31 @@ body.modal-open {
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+/* Enhanced Centering for Price Grid */
+.price-grid {
+    display: grid;
+    /* This ensures columns are at most 1fr but at least 200px */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px auto 0;
+    /* Centers the grid container itself */
+    width: 100%;
+    max-width: 1000px;
+    /* Prevents the 2-card layout from getting too wide */
+    justify-content: center;
+    /* Centers items if there is extra space */
+}
+
+.library-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.price-card {
+    /* ... existing styles ... */
+    margin: 0 auto;
+    /* Extra insurance for centering */
+    width: 100%;
+}
