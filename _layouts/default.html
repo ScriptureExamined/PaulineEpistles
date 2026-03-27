@@ -159,5 +159,8 @@ layout: none
     </footer>
 
     <script src="{{ '/scripture-examined-script.js' | relative_url }}"></script>
+    {% if page.contact_scripts %}
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    > {% endif %}
   </body>
 </html>
