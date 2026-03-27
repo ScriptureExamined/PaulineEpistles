@@ -307,5 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add real API logic here later if you ever want live pricing.
   }
 
+  document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+
   setInterval(updatePrices, 30000);
 });
