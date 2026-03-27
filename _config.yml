@@ -1,6 +1,11 @@
 title: Scripture Examined
 description: Dedicated to the study of the Pauline Epistles.
-baseurl: "" # leave empty if your site is at username.github.io
-url: "" # leave empty for now
+
+# If your site is username.github.io/repository-name, put /repository-name here
+# If it is a custom domain, leave it as ""
+baseurl: ""
+url: ""
 
 markdown: kramdown
+incremental: true
+exclude: [Node_modules, vendor]
