@@ -4,4 +4,4 @@ baseurl: "" # leave empty if your site is at username.github.io
 url: "" # leave empty for now
 
 markdown: kramdown
-theme: jekyll-theme-minimal # Or leave blank to use your own CSS
+theme: # Or leave blank to use your own CSS
