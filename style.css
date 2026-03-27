@@ -1847,10 +1847,10 @@ body.modal-open {
 }
 
 /* Enhanced Centering for Price Grid */
+/* Base Grid: Works for the 2-card section */
 .price-grid {
     display: grid;
-    /* 1. Default for Mobile: 1 column */
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin: 40px auto 0;
     width: 100%;
@@ -1858,17 +1858,17 @@ body.modal-open {
     justify-content: center;
 }
 
-/* 2. Tablet & Small Desktop: Force exactly 2 columns (2x2 layout) */
-@media (min-width: 600px) {
-    .price-grid {
-        grid-template-columns: repeat(2, 1fr);
+/* Modifier: Specific rule for the 4-card "Foundation" section */
+@media (min-width: 600px) and (max-width: 1099px) {
+    .grid-2x2 {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
-/* 3. Large Desktop: Show all 4 in a row (Optional) */
+/* Optional: Large Desktop - back to 4 in a row */
 @media (min-width: 1100px) {
-    .price-grid {
-        grid-template-columns: repeat(4, 1fr);
+    .grid-2x2 {
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
