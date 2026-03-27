@@ -574,8 +574,7 @@ body.menu-open {
 
 .price-metals {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 220px));
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding-top: 32px;
     border-top: 1px solid var(--border-color);
@@ -1683,26 +1682,26 @@ body.modal-open {
 
 
 
-    .book-cover {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+.book-cover {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 
-    .book-actions {
-        justify-content: center;
-        gap: 12px;
-    }
+.book-actions {
+    justify-content: center;
+    gap: 12px;
+}
 
-    .book-actions .btn {
-        width: 100%;
-        max-width: 260px;
-    }
+.book-actions .btn {
+    width: 100%;
+    max-width: 260px;
+}
 
-    .featured-book {
-        padding-top: 24px;
-        padding-bottom: 40px;
-    }
+.featured-book {
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
 }
 
 @media (max-width: 480px) {
@@ -1775,4 +1774,44 @@ body.modal-open {
     max-width: 320px;
     height: auto;
     border-radius: 8px;
+}
+
+/* Tablet and Small Laptop Navigation Polish */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        gap: 20px;
+        /* Reduces the 40px gap to prevent overlap */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        /* Slightly smaller text for tighter spaces */
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        /* Scales the logo down slightly */
+    }
+}
+
+/* Tablet Hero Grid Polish */
+@media (max-width: 991px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        /* Stacks the text and image */
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        /* Centers the content */
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+        /* Centers buttons */
+    }
 }
