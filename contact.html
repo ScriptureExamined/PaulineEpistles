@@ -1,106 +1,98 @@
-<!doctype html>
-<html lang="en">
-  --- layout: default title: Contact Us load_web3: true ---
+---
+layout: default
+title: Contact Us
+load_web3: true
+---
 
-  <body>
-    <!-- Contact Section -->
-    <section class="section contact-page">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Contact</div>
-          <h1 class="section-title">Get in Touch</h1>
-          <p class="section-desc">
-            If you have a question or would like to reach out, use the form
-            below.
-          </p>
+<section class="section contact-page">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Contact</div>
+      <h1 class="section-title">Get in Touch</h1>
+      <p class="section-desc">
+        If you have a question or would like to reach out, use the form below.
+      </p>
+    </div>
+
+    <div class="contact-form-wrap">
+      <div class="price-card">
+        <div class="price-main" style="text-align: center">
+          <div class="price-value" style="font-size: 32px">Send a Message</div>
+          <span class="price-change" style="display: block">
+            Messages are sent directly.
+          </span>
         </div>
 
-        <div class="contact-form-wrap">
-          <div class="price-card">
-            <div class="price-main" style="text-align: center">
-              <div class="price-value" style="font-size: 32px">
-                Send a Message
-              </div>
-              <span class="price-change" style="display: block">
-                Messages are sent directly.
-              </span>
-            </div>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="8fd9ef0c-8151-4b70-b806-696600fdfe89"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://stannellc.github.io/PaulineEpistles/thanks.html"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New message from Scripture Examined"
+          />
+          <input
+            type="hidden"
+            name="from_name"
+            value="Scripture Examined Contact Form"
+          />
+          <input type="checkbox" name="botcheck" style="display: none" />
+          <input type="hidden" name="from_page" value="contact" />
 
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              class="contact-form"
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="8fd9ef0c-8151-4b70-b806-696600fdfe89"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://stannellc.github.io/PaulineEpistles/thanks.html"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New message from Scripture Examined"
-              />
-              <input
-                type="hidden"
-                name="from_name"
-                value="Scripture Examined Contact Form"
-              />
-
-              <input type="checkbox" name="botcheck" style="display: none" />
-              <input type="hidden" name="from_page" value="contact" />
-
-              <div class="form-group">
-                <label class="form-label" for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-input"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-input"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-textarea"
-                  rows="7"
-                  required
-                ></textarea>
-              </div>
-
-              <div
-                class="hero-actions"
-                style="justify-content: center; margin-top: 24px"
-              >
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-                <a href="index.html" class="btn btn-outline">Back to Home</a>
-              </div>
-            </form>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              required
+            />
           </div>
-        </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              rows="7"
+              required
+            ></textarea>
+          </div>
+
+          <div
+            class="hero-actions"
+            style="justify-content: center; margin-top: 24px"
+          >
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <a href="index.html" class="btn btn-outline">Back to Home</a>
+          </div>
+        </form>
       </div>
-    </section>
-  </body>
-</html>
+    </div>
+  </div>
+</section>
