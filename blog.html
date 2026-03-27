@@ -1,0 +1,56 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Scripture Studies</div>
+      <h2 class="section-title">Latest Articles & Observations</h2>
+      <p class="section-desc">
+        A collection of shorter studies, doctrinal notes, and updates regarding
+        current works in progress.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      {% for post in site.posts %}
+      <div class="service-card">
+        <div class="service-icon">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+          </svg>
+        </div>
+        <h3 class="service-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <p class="service-desc">
+          {{ post.excerpt | strip_html | truncatewords: 25 }}
+        </p>
+        <div style="margin-top: 15px">
+          <span
+            class="gold"
+            style="
+              font-family: &quot;Libre Franklin&quot;, sans-serif;
+              font-size: 0.8rem;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            "
+          >
+            {{ post.date | date: "%B %d, %Y" }}
+          </span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
