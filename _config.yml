@@ -4,4 +4,3 @@ baseurl: "" # leave empty if your site is at username.github.io
 url: "" # leave empty for now
 
 markdown: kramdown
-theme: # Or leave blank to use your own CSS
