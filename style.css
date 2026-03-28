@@ -1014,6 +1014,10 @@ section {
     border-top: 1px solid var(--border-color);
 }
 
+.footer-col {
+    align-content: center;
+}
+
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
