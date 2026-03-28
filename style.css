@@ -1292,12 +1292,6 @@ section {
     gap: 20px;
 }
 
-/*@media (max-width: 768px) {
-    .section.about-hero {
-        padding-top: 90px !important;
-    }
-}*/
-
 @media (max-width: 768px) {
     .section {
         padding: 20px 0;
@@ -1350,7 +1344,7 @@ section {
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 180px;
     /* adjust to match nav height */ /* Temp change from 120px*/
 }
 
