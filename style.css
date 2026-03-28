@@ -1292,11 +1292,11 @@ section {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .section.about-hero {
         padding-top: 90px !important;
     }
-}
+}*/
 
 @media (max-width: 768px) {
     .section {
