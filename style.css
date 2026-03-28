@@ -1884,3 +1884,16 @@ body.modal-open {
     /* Extra insurance for centering */
     width: 100%;
 }
+
+.nav-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-tagline {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-top: 4px;
+    color: #aaa;
+    /* adjust to your theme */
+}
