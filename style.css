@@ -1350,8 +1350,8 @@ section {
 }
 
 body {
-    padding-top: 120px;
-    /* adjust to match nav height */
+    padding-top: 80px;
+    /* adjust to match nav height */ /* Temp change from 120px*/
 }
 
 .books-page .hero {
@@ -1715,8 +1715,6 @@ body.modal-open {
     border-radius: 8px;
 }
 
-
-
 .book-cover {
     width: 100%;
     max-width: 100%;
@@ -1736,7 +1734,6 @@ body.modal-open {
 .featured-book {
     padding-top: 24px;
     padding-bottom: 40px;
-}
 }
 
 @media (max-width: 480px) {
