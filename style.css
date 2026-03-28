@@ -360,7 +360,7 @@ body.menu-open {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 160px 0 80px;
+    padding: 100px 0 80px; /* changed from 160 */
     overflow: hidden;
 }
 
