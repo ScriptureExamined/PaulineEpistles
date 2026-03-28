@@ -31,10 +31,17 @@ layout: none
           <a href="{{ '/' | relative_url }}" class="logo">
             Scripture <span>Examined</span></a
           >
-          <p>
-            A collection of text-driven biblical studies focused on clarity,
-            precision, and careful examination of Scripture.
-          </p>
+
+          <div class="nav-brand">
+            <a href="{{ '/' | relative_url }}" class="logo">
+              Scripture <span>Examined</span>
+            </a>
+            <p class="nav-tagline">
+              A collection of text-driven biblical studies focused on clarity,
+              precision, and careful examination of Scripture.
+            </p>
+          </div>
+
           <div class="nav-cta">
             <ul class="nav-links">
               <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -48,6 +55,7 @@ layout: none
               </li>
             </ul>
           </div>
+
           <button
             class="mobile-menu-btn"
             id="mobileMenuBtn"
