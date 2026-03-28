@@ -1334,7 +1334,7 @@ body {
 }
 
 .books-page .books-hero {
-    padding-top: 0;
+    padding-top: 110px !important;
 }
 
 .contact-form-wrap {
