@@ -509,6 +509,14 @@ body.menu-open {
     }
 }
 
+/* Tablet / iPad Specific Adjustment */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section.page-intro {
+        padding-top: 40px;
+        /* Reduces the large gap on iPad */
+    }
+}
+
 /* Price Card */
 .hero-visual {
     position: relative;
