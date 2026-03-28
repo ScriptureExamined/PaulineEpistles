@@ -1333,12 +1333,8 @@ body {
     min-height: 100vh;
 }
 
-.books-page.books-hero {
+.books-page .books-hero {
     padding-top: 110px !important;
-}
-
-.books-hero .section-header.centered {
-    margin: 110px auto 40px;
 }
 
 .contact-form-wrap {
