@@ -503,14 +503,9 @@ body.menu-open {
 }
 
 @media (max-width: 768px) {
-    .page-intro {
-        padding-top: 100px !important;
+    .section.page-intro {
+        padding-top: 100px;
         padding-bottom: 24px;
-    }
-
-    .page-intro .section-header {
-        max-width: 100%;
-        margin: 0 auto 20px;
     }
 }
 
