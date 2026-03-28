@@ -1371,7 +1371,7 @@ body {
 
 .contact-page .contact-form-wrap {
     max-width: 850px;
-    margin: 0 auto;
+    margin: 100px auto; /* was 0*/
 }
 
 .contact-page .price-card {
