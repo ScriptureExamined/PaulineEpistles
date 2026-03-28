@@ -504,7 +504,7 @@ body.menu-open {
 
 @media (max-width: 768px) {
     .page-intro {
-        padding-top: 70px;
+        padding-top: 25px;
         padding-bottom: 24px;
     }
 
