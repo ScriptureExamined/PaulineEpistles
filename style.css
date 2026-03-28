@@ -504,7 +504,7 @@ body.menu-open {
 
 @media (max-width: 768px) {
     .page-intro {
-        padding-top: 25px;
+        padding-top: 100px !important;
         padding-bottom: 24px;
     }
 
@@ -1292,11 +1292,11 @@ section {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-    .section {
-        padding: 20px 0;
-    }
-}
+ @media (max-width: 768px) {
+     .section:not(.page-intro) {
+         padding: 20px 0;
+     }
+ }
 
 @media (max-width: 768px) {
     .section-header {
