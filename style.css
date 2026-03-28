@@ -484,6 +484,36 @@ body.menu-open {
     letter-spacing: 0.1em;
 }
 
+.page-intro {
+    padding-top: 110px;
+    padding-bottom: 40px;
+}
+
+.page-intro .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.page-intro .section-desc,
+.page-intro .section-content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .page-intro {
+        padding-top: 90px;
+        padding-bottom: 24px;
+    }
+
+    .page-intro .section-header {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+}
+
 /* Price Card */
 .hero-visual {
     position: relative;
