@@ -460,6 +460,11 @@ body.menu-open {
     padding-top: 0px;
 }
 
+.about-hero,
+.books-page.books-hero {
+    padding-top: 110px;
+}
+
 .about-hero .section-header {
     margin-top: 0;
 }
