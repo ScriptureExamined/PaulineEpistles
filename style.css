@@ -1971,6 +1971,9 @@ body.modal-open {
 .footer-methodologies {
     grid-column: span 3;
 }
+.footer-methodologies .footer-title {
+    text-align: center;
+}
 
 .footer-method-grid {
     display: grid;
@@ -2026,10 +2029,6 @@ body.modal-open {
     .footer-method-card {
         min-height: auto;
     }
-}
-
-.footer-methodologies {
-    grid-column: span 3;
 }
 
 .footer-method-grid {
