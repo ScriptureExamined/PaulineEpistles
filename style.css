@@ -1927,78 +1927,37 @@ body.modal-open {
     /* adjust to your theme */
 }
 
-.footer-premium-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.footer-premium-item {
-    display: block;
-    padding: 16px 18px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.footer-premium-item:hover {
-    border-color: var(--gold-primary);
-    transform: translateY(-2px);
-    background: var(--bg-card-hover);
-}
-
-.footer-premium-kicker {
-    display: block;
-    font-size: 10px;
+/* Footer Link Tags */
+.footer-tag {
+    font-size: 9px;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--gold-primary);
-    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    padding: 2px 6px;
+    margin-left: 8px;
+    border-radius: 4px;
+    vertical-align: middle;
 }
 
-.footer-premium-title {
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    color: var(--text-primary);
-    margin-bottom: 6px;
+.footer-tag.available {
+    background: rgba(74, 124, 89, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(74, 124, 89, 0.2);
 }
 
-.footer-premium-text {
-    display: block;
-    font-size: 13px;
-    line-height: 1.7;
-    color: var(--text-secondary);
+.footer-tag.upcoming {
+    background: rgba(166, 159, 148, 0.1);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
 }
 
-.footer-premium-muted {
-    opacity: 0.72;
+/* Cleanup for inactive links */
+.footer-links a.disabled {
+    pointer-events: none;
+    color: var(--text-muted);
 }
 
-.footer-focus-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-}
-
-.footer-focus-item {
-    display: flex;
+/* Ensure Methodology links look consistent */
+.footer-links a {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-height: 72px;
-    padding: 14px;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.footer-focus-item:hover {
-    border-color: var(--gold-primary);
-    color: var(--gold-light);
-    background: var(--bg-card-hover);
 }
