@@ -2034,7 +2034,7 @@ body.modal-open {
 
 .footer-method-grid {
     display: grid;
-    grid-template-columns: repeat(4, 120px);
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
     gap: 14px;
     justify-content: center; /* centers the entire row */
     margin-top: 8px;
