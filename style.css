@@ -2034,23 +2034,59 @@ body.modal-open {
 
 .footer-method-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    margin-top: 8px;
 }
 
 .footer-method-card {
     display: block;
-    padding: 16px 14px;
+    padding: 14px 12px;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
-    min-height: 120px;
+    min-height: 108px;
 }
 
 .footer-method-card:hover {
     border-color: var(--gold-primary);
     background: var(--bg-card-hover);
     transform: translateY(-2px);
+}
+
+.footer-method-kicker {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.footer-method-title {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.1;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.footer-method-text {
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--success);
+}
+
+@media (max-width: 768px) {
+    .footer-method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-method-card {
+        min-height: auto;
+    }
 }
 
 .footer-method-kicker {
