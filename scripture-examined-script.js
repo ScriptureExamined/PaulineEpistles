@@ -311,3 +311,85 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(updatePrices, 30000);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("sampleModal");
+  const overlay = document.getElementById("sampleModalOverlay");
+  const closeBtn = document.getElementById("sampleModalClose");
+
+  const labelEl = document.getElementById("sampleModalLabel");
+  const titleEl = document.getElementById("sampleModalTitle");
+  const introEl = document.getElementById("sampleModalIntro");
+  const outlineEl = document.getElementById("sampleModalOutline");
+
+  const triggers = document.querySelectorAll(".js-sample-trigger");
+
+  if (!modal || !overlay || !closeBtn || !labelEl || !titleEl || !introEl || !outlineEl) {
+    return;
+  }
+
+  function escapeHtml(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function buildOutline(items) {
+    return items.map(function (item) {
+      const label = escapeHtml(item.label || "");
+      const text = escapeHtml(item.text || "");
+      return `
+        <p>
+          <span class="gold emphasis">${label}:</span> ${text}
+        </p>
+      `;
+    }).join("");
+  }
+
+  function openModal(trigger) {
+    const label = trigger.dataset.sampleLabel || "Sample Outline";
+    const title = trigger.dataset.sampleTitle || "";
+    const intro = trigger.dataset.sampleIntro || "";
+
+    let outlineItems = [];
+    try {
+      outlineItems = JSON.parse(trigger.dataset.sampleOutline || "[]");
+    } catch (error) {
+      console.error("Invalid sample outline JSON:", error);
+      outlineItems = [];
+    }
+
+    labelEl.textContent = label;
+    titleEl.textContent = title;
+    introEl.textContent = intro;
+    outlineEl.innerHTML = buildOutline(outlineItems);
+
+    modal.classList.add("is-open");
+    overlay.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  function closeModal() {
+    modal.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  triggers.forEach(function (trigger) {
+    trigger.addEventListener("click", function (event) {
+      event.preventDefault();
+      openModal(trigger);
+    });
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+      closeModal();
+    }
+  });
+});
