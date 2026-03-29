@@ -461,10 +461,6 @@ body.menu-open {
     margin-top: 25px;
 }
 
-/*.about-hero .section-header {
-    margin-top: 110px;
-}*/
-
 .stat-item {
     text-align: left;
 }
@@ -777,8 +773,6 @@ section {
     line-height: 1.7;
 }
 
-
-
 /* Mobile - 2 column layout */
 @media (max-width: 600px) {
     .why-image-grid {
@@ -1074,12 +1068,13 @@ section {
     padding-top: 30px;
     margin-top: 40px;
     border-top: 1px solid var(--border-color);
-    
+}    
 
 .footer-copy {
     margin: 0;
     font-size: 14px;
     color: var(--text-muted);
+}
 
 .footer-socials {
         display: flex;
@@ -1697,16 +1692,12 @@ body.modal-open {
     padding-top: 32px;
 }
 
-
-
 .book-cover {
     width: 100%;
     max-width: 320px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
-
-
 
 .book-cover {
     display: block;
