@@ -2034,7 +2034,7 @@ body.modal-open {
 
 .footer-method-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-top: 8px;
 }
@@ -2045,7 +2045,7 @@ body.modal-open {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
-    min-height: 108px;
+    min-height: 120px;
 }
 
 .footer-method-card:hover {
