@@ -1,6 +1,17 @@
-<section class="section">
+---
+layout: default
+---
+
+<section class="section page-intro">
   <div class="container">
-    <h1>{{ page.title }}</h1>
-    <div class="blog-content">{{ content }}</div>
+    <div class="section-header centered">
+      <div class="section-label">Study</div>
+      <h1 class="section-title gold">{{ page.title }}</h1>
+      {% if page.date %}
+      <p class="section-desc">{{ page.date | date: "%B %d, %Y" }}</p>
+      {% endif %}
+    </div>
+
+    <div class="section-content">{{ content }}</div>
   </div>
 </section>
