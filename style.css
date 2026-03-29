@@ -1967,3 +1967,63 @@ body.modal-open {
         margin-right: 0;
     }
 }
+
+.footer-methodologies {
+    min-width: 0;
+}
+
+.footer-method-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.footer-method-card {
+    display: block;
+    padding: 16px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    min-height: 120px;
+}
+
+.footer-method-card:hover {
+    border-color: var(--gold-primary);
+    background: var(--bg-card-hover);
+    transform: translateY(-2px);
+}
+
+.footer-method-kicker {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gold-primary);
+    margin-bottom: 8px;
+}
+
+.footer-method-title {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.footer-method-text {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .footer-method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-method-card {
+        min-height: auto;
+    }
+}
