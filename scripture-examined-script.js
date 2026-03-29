@@ -393,3 +393,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+const label = trigger.dataset.sampleLabel || "Methodology";
