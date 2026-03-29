@@ -234,6 +234,55 @@ layout: none
       </div>
     </footer>
 
+    <div class="sample-modal-overlay" id="sampleModalOverlay"></div>
+
+<div
+  class="sample-modal"
+  id="sampleModal"
+  aria-hidden="true"
+  role="dialog"
+  aria-labelledby="sampleModalTitle"
+>
+  <button
+    class="sample-modal-close"
+    id="sampleModalClose"
+    aria-label="Close sample preview"
+    type="button"
+  >
+    &times;
+  </button>
+  <div class="sample-modal-content">
+    <div class="section-label" id="sampleModalLabel">Sample Outline</div>
+    <h2 id="sampleModalTitle" class="section-title gold">The Will of God</h2>
+    <p class="sample-modal-intro" id="sampleModalIntro">
+      This preview provides a brief outline of the study’s direction and
+      emphasis.
+    </p>
+    <div class="sample-outline" id="sampleModalOutline">
+      <p>
+        <span class="gold emphasis">Introduction:</span> Why the common idea of
+        “finding God’s will” deserves closer examination.
+      </p>
+      <p>
+        <span class="gold emphasis">Paul’s Language:</span> How Paul speaks
+        about God’s will, purpose, and intention.
+      </p>
+      <p>
+        <span class="gold emphasis">Key Terms:</span> A closer look at words
+        often flattened in translation.
+      </p>
+      <p>
+        <span class="gold emphasis">Doctrinal Implications:</span> What changes
+        when Scripture is allowed to define the subject on its own terms.
+      </p>
+      <p>
+        <span class="gold emphasis">Conclusion:</span> A return to the wording
+        of the text rather than inherited assumptions.
+      </p>
+    </div>
+  </div>
+</div>
+
     <script src="{{ '/scripture-examined-script.js' | relative_url }}"></script>
     {% if page.load_web3forms %}
     <script src="https://web3forms.com/client/script.js" async defer></script>
