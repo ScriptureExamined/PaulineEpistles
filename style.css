@@ -1067,30 +1067,24 @@ section {
 
 .footer-bottom {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    /* Keeps copy left, socials right */
-    padding-top: 40px;
+    /* Pushes copy to left and socials to right */
+    align-items: center;
+    /* Centers them vertically against each other */
+    padding-top: 30px;
     margin-top: 40px;
     border-top: 1px solid var(--border-color);
-    width: 100%;
-    gap: 20px; /* prevents squishing */
-}
 
 .footer-copy {
-    font-size: 13px;
+    margin: 0;
+    font-size: 14px;
     color: var(--text-muted);
-    text-align: left;
-    flex: 1; /* Ensures it takes up the available space on the left */
-    margin: 0; /* pushes socials to the far right */
-}
 
 .footer-socials {
-    margin-left: auto; /* Pushes socials to the right */
-    display: flex;
-    gap: 16px;
-    order: -1; /* Optional: puts socials above the copyright on mobile */
-}
+        display: flex;
+        gap: 20px;
+        /* Space between the social icons */
+    }
 
 .social-link {
     width: 40px;
@@ -1596,7 +1590,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
     .section-header.centered,
     .centered-content {
         max-width: 100%;
@@ -1974,7 +1967,7 @@ body.modal-open {
 @media (max-width: 768px) {
     .footer-bottom {
         flex-direction: column;
-        gap: 16px;
+        gap: 20px;
         text-align: center;
     }
 
