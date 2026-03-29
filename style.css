@@ -1969,7 +1969,7 @@ body.modal-open {
 }
 
 .footer-methodologies {
-    min-width: 0;
+    grid-column: span 3;
 }
 
 .footer-method-grid {
