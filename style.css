@@ -1074,6 +1074,7 @@ section {
     margin-top: 40px;
     border-top: 1px solid var(--border-color);
     width: 100%;
+    gap: 20px; /* prevents squishing */
 }
 
 .footer-copy {
@@ -1081,6 +1082,8 @@ section {
     color: var(--text-muted);
     text-align: left;
     flex: 1; /* Ensures it takes up the available space on the left */
+    margin-right: auto;
+        /* pushes socials to the far right */
 }
 
 .footer-socials {
@@ -1966,4 +1969,16 @@ body.modal-open {
 .footer-links a {
     display: inline-flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-copy {
+        margin-right: 0;
+    }
 }
