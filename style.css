@@ -1069,18 +1069,24 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* Keeps copy left, socials right */
     padding-top: 40px;
+    margin-top: 40px;
     border-top: 1px solid var(--border-color);
+    width: 100%;
 }
 
 .footer-copy {
     font-size: 13px;
     color: var(--text-muted);
+    text-align: left;
+    flex: 1; /* Ensures it takes up the available space on the left */
 }
 
 .footer-socials {
     display: flex;
     gap: 16px;
+    order: -1; /* Optional: puts socials above the copyright on mobile */
 }
 
 .social-link {
