@@ -1082,11 +1082,11 @@ section {
     color: var(--text-muted);
     text-align: left;
     flex: 1; /* Ensures it takes up the available space on the left */
-    margin-right: auto;
-        /* pushes socials to the far right */
+    margin: 0; /* pushes socials to the far right */
 }
 
 .footer-socials {
+    margin-left: auto; /* Pushes socials to the right */
     display: flex;
     gap: 16px;
     order: -1; /* Optional: puts socials above the copyright on mobile */
