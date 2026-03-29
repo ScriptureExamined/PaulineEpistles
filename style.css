@@ -2032,13 +2032,9 @@ body.modal-open {
     grid-column: span 3;
 }
 
-/* .footer-methodologies {
-    grid-column: 1 / -1; /* full width of footer */
-} */
-
 .footer-method-grid {
     display: grid;
-    grid-template-columns: repeat(4, 180px);
+    grid-template-columns: repeat(4, 120px);
     gap: 14px;
     justify-content: center; /* centers the entire row */
     margin-top: 8px;
