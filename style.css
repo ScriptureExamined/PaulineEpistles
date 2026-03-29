@@ -2028,13 +2028,13 @@ body.modal-open {
     }
 }
 
-/* .footer-methodologies {
-    min-width: 0;
-} */
-
 .footer-methodologies {
-    grid-column: 1 / -1; /* full width of footer */
+    min-width: 0;
 }
+
+/* .footer-methodologies {
+    grid-column: 1 / -1; /* full width of footer */
+} */
 
 .footer-method-grid {
     display: grid;
