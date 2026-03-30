@@ -504,7 +504,7 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 100px 0 80px;
+    padding: 50px 0 80px;
     overflow: hidden;
 }
 
@@ -1821,7 +1821,6 @@ section {
     }
 
     .hero-grid,
-    .why-grid,
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 60px;
