@@ -1,31 +1,83 @@
 ---
 layout: default
 title: Blog | Scripture Examined
+permalink: /blog/
 ---
 
-<section class="section page-intro blog-intro">
+<section class="page-hero">
   <div class="container">
-    <div class="section-header centered">
-      <div class="section-label">Blog</div>
-      <h1 class="section-title">Scripture Studies & Updates</h1>
-      <p class="section-desc">
-        Articles, study notes, and updates related to the books and biblical
-        studies published through Scripture Examined.
-      </p>
+    <p class="section-label">Scripture Examined</p>
+    <h1>Blog</h1>
+    <p class="page-intro">
+      Text-driven studies, passage work, word studies, and book updates.
+    </p>
+  </div>
+</section>
+
+<section class="blog-page-section">
+  <div class="container">
+    {% assign sorted_posts = site.posts | reverse %} {% assign all_categories =
+    "" | split: "" %} {% for post in sorted_posts %} {% for category in
+    post.categories %} {% assign all_categories = all_categories | push:
+    category %} {% endfor %} {% endfor %} {% assign unique_categories =
+    all_categories | uniq | sort %}
+
+    <div class="blog-toolbar">
+      <div class="blog-toolbar-left">
+        <h2>Browse Posts</h2>
+        <p>Use the category filters to narrow the list.</p>
+      </div>
+
+      <div class="blog-filters" id="blogFilters">
+        <button class="filter-btn is-active" type="button" data-filter="all">
+          All
+        </button>
+        {% for category in unique_categories %}
+        <button
+          class="filter-btn"
+          type="button"
+          data-filter="{{ category | slugify }}"
+        >
+          {{ category }}
+        </button>
+        {% endfor %}
+      </div>
     </div>
 
-    <div class="services-grid">
-      {% for post in site.posts %}
-      <div class="service-card">
-        <h3 class="service-title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h3>
-        <p class="service-desc">
-          {{ post.excerpt | strip_html | truncatewords: 20 }}
-        </p>
-        <span class="price-label">{{ post.date | date: "%B %d, %Y" }}</span>
-      </div>
+    <div class="blog-posts-grid" id="blogPostsGrid">
+      {% for post in sorted_posts %} {% assign category_slugs = "" %} {% for
+      category in post.categories %} {% assign category_slugs = category_slugs |
+      append: category | slugify | append: " " %} {% endfor %}
+
+      <article class="blog-card" data-category="{{ category_slugs | strip }}">
+        <div class="blog-card-inner">
+          <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          <h3 class="blog-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+
+          {% if post.categories and post.categories.size > 0 %}
+          <div class="blog-card-categories">
+            {% for category in post.categories %}
+            <span class="blog-chip">{{ category }}</span>
+            {% endfor %}
+          </div>
+          {% endif %} {% if post.excerpt %}
+          <p class="blog-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 180 }}
+          </p>
+          {% endif %}
+
+          <a class="blog-read-more" href="{{ post.url | relative_url }}"
+            >Read More</a
+          >
+        </div>
+      </article>
       {% endfor %}
     </div>
+
+    <p class="blog-no-results" id="blogNoResults" hidden>
+      No posts match that category yet.
+    </p>
   </div>
 </section>
