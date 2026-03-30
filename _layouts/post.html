@@ -2,16 +2,28 @@
 layout: default
 ---
 
-<section class="section page-intro">
-  <div class="container">
-    <div class="section-header centered">
-      <div class="section-label">Study</div>
-      <h1 class="section-title gold">{{ page.title }}</h1>
-      {% if page.date %}
-      <p class="section-desc">{{ page.date | date: "%B %d, %Y" }}</p>
-      {% endif %}
-    </div>
+--- layout: default ---
 
-    <div class="section-content">{{ content }}</div>
+<section class="page-hero">
+  <div class="container">
+    <p class="section-label">Scripture Examined</p>
+    <h1>{{ page.title }}</h1>
+    <p class="page-intro">{{ page.date | date: "%B %-d, %Y" }}</p>
+  </div>
+</section>
+
+<section class="post-page-section">
+  <div class="container">
+    <article class="post-article">
+      {% if page.categories and page.categories.size > 0 %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+        <span class="blog-chip">{{ category }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="post-content">{{ content }}</div>
+    </article>
   </div>
 </section>
