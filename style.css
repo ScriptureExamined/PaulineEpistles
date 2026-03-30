@@ -1740,6 +1740,7 @@ section {
 
 .blog-card a:hover {
     color: var(--gold-light);
+}
 
 .blog-card-categories {
     display: flex;
