@@ -1,10 +1,8 @@
 title: Scripture Examined
 description: Dedicated to the study of the Pauline Epistles.
 
-# If your site is username.github.io/repository-name, put /repository-name here
-# If it is a custom domain, leave it as ""
-baseurl: "/PaulineEpistles"
-url: "https://scriptureexamined.github.io"
+baseurl: ""
+url: "https://god.stannellc.com"
 
 markdown: kramdown
 incremental: true
