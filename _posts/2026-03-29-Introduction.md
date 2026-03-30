@@ -23,7 +23,7 @@ We ask:
 - How is it being said?
 - And what must be concluded if we take the text seriously?
 
-A central focus of this work is the will of God. Not as something uncertain or waiting on human decision—but as something described in Scripture as active, intentional, and effective.
+A central focus of this work is the will of God. Not as something uncertain or waiting on human decision, but as something described in Scripture as active, intentional, and effective.
 
 This raises necessary questions:
 
