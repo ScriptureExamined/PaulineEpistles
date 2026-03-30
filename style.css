@@ -830,7 +830,7 @@ section {
     gap: 24px;
 }
 
-.approach-cardapproach-card {
+.approach-card-card {
     padding: 48px 32px;
     background: var(--bg-dark);
     border: 1px solid var(--border-color);
@@ -840,7 +840,7 @@ section {
     overflow: hidden;
 }
 
-.approach-cardapproach-card::before {
+.approach-card-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -852,13 +852,13 @@ section {
     transition: transform 0.4s ease;
 }
 
-.approach-cardapproach-card:hover {
+.approach-card-card:hover {
     transform: translateY(-8px);
     border-color: var(--gold-dark);
     background: var(--bg-card-hover);
 }
 
-.approach-cardapproach-card:hover::before {
+.approach-card-card:hover::before {
     transform: scaleX(1);
 }
 
@@ -875,7 +875,7 @@ section {
     transition: all 0.4s ease;
 }
 
-.approach-cardapproach-card:hover .approach-icon {
+.approach-card-card:hover .approach-icon {
     background: var(--gold-primary);
     color: var(--bg-dark);
     border-color: var(--gold-primary);
