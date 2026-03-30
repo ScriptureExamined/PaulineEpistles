@@ -394,4 +394,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const filterWrap = document.getElementById('blogFilters');
+    const cards = Array.from(document.querySelectorAll('.blog-card'));
+    const noResults = document.getElementById('blogNoResults');
+
+    if (!filterWrap || !cards.length) return;
+
+    filterWrap.addEventListener('click', function (event) {
+      const button = event.target.closest('.filter-btn');
+      if (!button) return;
+
+      const filter = button.dataset.filter;
+      const buttons = filterWrap.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('is-active'));
+      button.classList.add('is-active');
+
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const categoryList = (card.dataset.category || '').split(' ').filter(Boolean);
+        const shouldShow = filter === 'all' || categoryList.includes(filter);
+
+        card.style.display = shouldShow ? '' : 'none';
+        if (shouldShow) visibleCount++;
+      });
+
+      noResults.hidden = visibleCount !== 0;
+    });
+  });
+
 const label = trigger.dataset.sampleLabel || "Methodology";
