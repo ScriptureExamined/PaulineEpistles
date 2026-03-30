@@ -2287,3 +2287,11 @@ section {
     border: none;
     border-top: 1px solid var(--border-color);
 }
+
+.section-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
