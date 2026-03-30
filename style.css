@@ -2215,3 +2215,75 @@ section {
         font-size: 1rem;
     }
 }
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+/* Paragraphs */
+.post-content p {
+    margin-bottom: 1.2em;
+}
+
+/* Headings */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+    color: var(--text-primary);
+}
+
+.post-content h2 {
+    font-size: 2rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+}
+
+/* Lists */
+.post-content ul,
+.post-content ol {
+    margin: 1em 0 1.2em 1.5em;
+}
+
+.post-content li {
+    margin-bottom: 0.5em;
+}
+
+/* Emphasis */
+.post-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.post-content em {
+    font-style: italic;
+}
+
+/* Blockquotes (for future use) */
+.post-content blockquote {
+    margin: 1.5em 0;
+    padding-left: 1em;
+    border-left: 3px solid var(--gold-primary);
+    color: var(--text-primary);
+}
+
+/* Links */
+.post-content a {
+    color: var(--gold-light);
+    text-decoration: underline;
+}
+
+/* Horizontal rules */
+.post-content hr {
+    margin: 2em 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
