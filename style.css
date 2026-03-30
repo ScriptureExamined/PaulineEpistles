@@ -673,7 +673,7 @@ section {
    8. FEATURE / PRICE CARD SYSTEM
 ======================================== */
 
-.price-card {
+.feature-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     padding: 40px;
@@ -682,7 +682,7 @@ section {
     width: 100%;
 }
 
-.price-card::before {
+.feature-card::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -1195,7 +1195,7 @@ section {
     margin: 0 auto;
 }
 
-.contact-page .price-card {
+.contact-page .feature-card {
     width: 100%;
 }
 
@@ -1350,8 +1350,8 @@ section {
     margin: 0 auto;
 }
 
-.about-approach .price-card,
-.thank-you-page .price-card {
+.about-approach .feature-card,
+.thank-you-page .feature-card {
     width: 100%;
 }
 
