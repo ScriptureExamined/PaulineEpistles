@@ -84,6 +84,11 @@ title: Home | Scripture Examined
     <div class="approach-section-grid">
       <div class="approach-card">
         <div class="approach-icon">
+          Here is a clean, modern magnifying glass SVG. I have designed it to
+          match the 1.5 stroke-width and rounded caps of the other icons we just
+          added to your site, ensuring it looks consistent with your "Scripture
+          First" and "Defined Terms" icons. The SVG Code HTML
+
           <svg
             width="28"
             height="28"
@@ -94,13 +99,38 @@ title: Home | Scripture Examined
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path
-              d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-            ></path>
-            <path d="M8 7h8"></path>
-            <path d="M8 11h8"></path>
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
+
+          How to use it in your approach-card: If you want to use this for a
+          section like "Careful Examination," you would drop it into the
+          approach-icon div like this: HTML
+
+          <div class="approach-card">
+            <div class="approach-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="approach-title">Careful Examination</h3>
+            <p class="approach-desc">
+              We look closely at the Greek and Hebrew nuances often lost in
+              standard translations.
+            </p>
+          </div>
+
+          Why this
         </div>
         <h3 class="approach-title">Text First</h3>
         <p class="approach-desc">
