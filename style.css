@@ -759,7 +759,7 @@ section {
     color: var(--danger);
 }
 
-.price-metals {
+.feature-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -767,18 +767,18 @@ section {
     border-top: 1px solid var(--border-color);
 }
 
-.metal-item {
+.feature-detail-card {
     padding: 20px;
     background: var(--bg-dark);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
 
-.metal-item:hover {
+.feature-detail-card:hover {
     border-color: var(--gold-primary);
 }
 
-.metal-name {
+.feature-detail-label {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -786,19 +786,19 @@ section {
     margin-bottom: 8px;
 }
 
-.metal-price {
+.feature-detail-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
     color: var(--text-primary);
 }
 
-.metal-change {
+.feature-detail-note {
     font-size: 12px;
     color: var(--success);
     margin-top: 4px;
 }
 
-.metal-change.down {
+.feature-detail-note.down {
     color: var(--danger);
 }
 
@@ -1361,8 +1361,8 @@ section {
     margin: 0 auto;
 }
 
-.about-approach .price-metals,
-.thank-you-page .price-metals {
+.about-approach .feature-details,
+.thank-you-page .feature-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1925,14 +1925,14 @@ section {
         width: 100%;
     }
 
-    .about-approach .price-metals,
-    .thank-you-page .price-metals {
+    .about-approach .feature-details,
+    .thank-you-page .feature-details {
         grid-template-columns: 1fr;
         justify-items: center;
     }
 
-    .about-approach .metal-item,
-    .thank-you-page .metal-item {
+    .about-approach .feature-detail-card,
+    .thank-you-page .feature-detail-card {
         max-width: 400px;
         width: 100%;
     }
