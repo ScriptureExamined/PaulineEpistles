@@ -808,13 +808,13 @@ section {
 
 /* Services */
 
-.services {
+.approach-section {
     background: var(--bg-card);
     position: relative;
     padding-bottom: 0;
 }
 
-.services::before {
+.approach-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -824,13 +824,13 @@ section {
     background: linear-gradient(90deg, transparent, var(--border-color), transparent);
 }
 
-.services-grid {
+.approach-section-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.service-card {
+.approach-cardapproach-card {
     padding: 48px 32px;
     background: var(--bg-dark);
     border: 1px solid var(--border-color);
@@ -840,7 +840,7 @@ section {
     overflow: hidden;
 }
 
-.service-card::before {
+.approach-cardapproach-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -852,17 +852,17 @@ section {
     transition: transform 0.4s ease;
 }
 
-.service-card:hover {
+.approach-cardapproach-card:hover {
     transform: translateY(-8px);
     border-color: var(--gold-dark);
     background: var(--bg-card-hover);
 }
 
-.service-card:hover::before {
+.approach-cardapproach-card:hover::before {
     transform: scaleX(1);
 }
 
-.service-icon {
+.approach-icon {
     width: 64px;
     height: 64px;
     margin: 0 auto 24px;
@@ -875,19 +875,19 @@ section {
     transition: all 0.4s ease;
 }
 
-.service-card:hover .service-icon {
+.approach-cardapproach-card:hover .approach-icon {
     background: var(--gold-primary);
     color: var(--bg-dark);
     border-color: var(--gold-primary);
 }
 
-.service-title {
+.approach-title {
     font-size: 22px;
     color: var(--text-primary);
     margin-bottom: 16px;
 }
 
-.service-desc {
+.approach-desc {
     font-size: 14px;
     color: var(--text-secondary);
     line-height: 1.7;
@@ -1786,7 +1786,7 @@ section {
 ======================================== */
 
 @media (max-width: 1200px) {
-    .services-grid {
+    .approach-section-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -2021,7 +2021,7 @@ section {
 }
 
 @media (max-width: 600px) {
-    .services-grid {
+    .approach-section-grid {
         grid-template-columns: 1fr;
     }
 
