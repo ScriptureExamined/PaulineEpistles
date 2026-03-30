@@ -9,13 +9,11 @@ categories: [Foundations]
 
 Welcome to _Scripture Examined_.
 
-This is not a blog built on opinion, tradition, or inherited assumptions. It is a place for careful, text-driven study of Scripture—especially the writings of the Apostle Paul.
+This is not a blog built on opinion, tradition, or inherited assumptions. It is a place for careful, text-driven study of Scripture, especially the writings of the Apostle Paul.
 
 Many approach the Bible looking for guidance, comfort, or affirmation. Those are not wrong pursuits. But too often, the text itself is filtered through systems that were never stated by the authors.
 
-Here, we take a different approach.
-
-We follow the words as they are written.
+Here, we take a different approach. We follow the words as they are written.
 
 We ask:
 
