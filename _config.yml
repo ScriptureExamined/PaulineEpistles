@@ -5,5 +5,7 @@ baseurl: ""
 url: "https://god.stannellc.com"
 
 markdown: kramdown
-incremental: true
+
 exclude: [Node_modules, vendor]
+
+# rebuild test
