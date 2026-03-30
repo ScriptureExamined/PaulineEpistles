@@ -1734,11 +1734,7 @@ section {
     transition: color 0.2s ease;
 }
 
-/*.blog-card-title a:hover {
-    color: var(--gold-light);
-}*/
-
-.blog-card a:hover {
+.blog-card-title a:hover {
     color: var(--gold-light);
 }
 
