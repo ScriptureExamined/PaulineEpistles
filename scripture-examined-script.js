@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Safe: only runs if price element exists
   // -----------------------------
   function updatePrices() {
-    const priceElement = $(".price-value");
+    const priceElement = $(".feature-title");
     if (!priceElement) return;
 
     // Intentionally left minimal since this is visual/demo behavior only.

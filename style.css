@@ -692,21 +692,21 @@ section {
     background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
 }
 
-.price-header {
+.feature-card-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
 }
 
-.price-label {
+.feature-kicker {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: var(--text-muted);
 }
 
-.price-live {
+.feature-status {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -716,7 +716,7 @@ section {
     letter-spacing: 0.1em;
 }
 
-.price-live::before {
+.feature-status::before {
     content: '';
     width: 6px;
     height: 6px;
@@ -725,11 +725,11 @@ section {
     animation: pulse 1.5s infinite;
 }
 
-.price-main {
+.feature-main {
     margin-bottom: 32px;
 }
 
-.price-value {
+.feature-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 64px;
     color: var(--text-primary);
@@ -737,13 +737,13 @@ section {
     margin-bottom: 8px;
 }
 
-.price-value .currency {
+.feature-title .currency {
     font-size: 32px;
     color: var(--gold-light);
     vertical-align: top;
 }
 
-.price-change {
+.feature-subtitle {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -754,7 +754,7 @@ section {
     font-weight: 500;
 }
 
-.price-change.down {
+.feature-subtitle.down {
     background: rgba(139, 58, 58, 0.15);
     color: var(--danger);
 }
