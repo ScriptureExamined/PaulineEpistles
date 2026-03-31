@@ -1737,6 +1737,13 @@ section,
     color: var(--text-secondary);
 }
 
+.post-content>p:first-of-type {
+    font-size: 1.14rem;
+    line-height: 1.9;
+    color: var(--text-primary);
+    letter-spacing: 0.01em;
+}
+
 .post-content>*:first-child {
     margin-top: 0;
 }
