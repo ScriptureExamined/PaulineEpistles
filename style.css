@@ -1692,13 +1692,13 @@ section,
 .blog-read-more {
     margin-top: auto;
     font-weight: 700;
-    color: var(--gold-light);
+    color: var(--text-primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .blog-read-more:hover {
-    color: var(--text-primary);
+    color: var(--gold-light);
 }
 
 .blog-no-results {
