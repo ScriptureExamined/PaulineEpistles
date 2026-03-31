@@ -1730,10 +1730,10 @@ section,
 }
 
 .post-content {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
-    line-height: 1.8;
-    font-size: 1.05rem;
+    line-height: 1.85;
+    font-size: 1.08rem;
     color: var(--text-secondary);
 }
 
@@ -1742,16 +1742,17 @@ section,
 }
 
 .post-content p {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.3em;
     color: var(--text-secondary);
 }
 
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-    margin-top: 1.8em;
-    margin-bottom: 0.6em;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
     color: var(--text-primary);
+    line-height: 1.3;
 }
 
 .post-content h2 {
@@ -1759,21 +1760,21 @@ section,
 }
 
 .post-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
 }
 
 .post-content h4 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 .post-content ul,
 .post-content ol {
-    margin: 1em 0 1.2em 1.5em;
+    margin: 1.2em 0 1.4em 1.4em;
     color: var(--text-secondary);
 }
 
 .post-content li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6em;
 }
 
 .post-content em {
@@ -1786,22 +1787,28 @@ section,
 }
 
 .post-content blockquote {
-    margin: 1.5em 0;
-    padding: 0.75em 1em;
+    margin: 1.8em 0;
+    padding: 1em 1.2em;
     border-left: 3px solid var(--gold-primary);
     background: rgba(184, 134, 11, 0.08);
     color: var(--text-primary);
+    font-style: italic;
 }
 
 .post-content a {
     color: var(--gold-light);
     text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .post-content hr {
     border: none;
     border-top: 1px solid var(--border-color);
     margin: 2em 0;
+}
+
+.post-content p+p {
+    margin-top: 0.2em;
 }
 
 /* ========================================
@@ -2027,6 +2034,8 @@ section,
 
     .post-content {
         font-size: 1rem;
+        line-height: 1.75;
+        max-width: 100%;
     }
 }
 
