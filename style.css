@@ -1,10 +1,5 @@
 @charset "utf-8";
-/* CSS Document
-
-Reorganized for readability. Behavior preserved as closely as possible by
-keeping the final effective rules from the current stylesheet and grouping
-related sections together.
-*/
+/* CSS Document */
 
 /* ========================================
    1. ROOT VARIABLES
@@ -50,7 +45,6 @@ body {
     padding-top: 120px;
 }
 
-/* Noise texture overlay */
 body::before {
     content: '';
     position: fixed;
@@ -89,8 +83,9 @@ img {
     height: auto;
 }
 
-section {
-    padding: 80px 0; /* was 50 */
+section,
+.section {
+    padding: 80px 0;
     scroll-margin-top: 100px;
 }
 
@@ -172,7 +167,7 @@ section {
 }
 
 /* ========================================
-   4. GLOBAL BUTTONS / SHARED ELEMENTS
+   4. GLOBAL BUTTONS / ACTION ROWS
 ======================================== */
 
 .btn {
@@ -207,6 +202,35 @@ section {
     color: var(--gold-primary);
 }
 
+.hero-actions,
+.book-actions,
+.section-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-actions {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+.book-actions {
+    justify-content: center;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.section-actions {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.center-actions {
+    justify-content: center;
+}
+
 /* ========================================
    5. GLOBAL SECTION TYPOGRAPHY
 ======================================== */
@@ -214,7 +238,7 @@ section {
 .section-header {
     text-align: center;
     max-width: 600px;
-    margin: 0 auto 40px; /* was 110px auto 30px */  
+    margin: 0 auto 40px;
 }
 
 .section-header.centered {
@@ -504,7 +528,7 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 120px 0 80px; /* was 50px 0 80px; */
+    padding: 120px 0 80px;
     overflow: hidden;
 }
 
@@ -573,12 +597,6 @@ section {
     line-height: 1.8;
 }
 
-.hero-actions {
-    margin-top: 30px;
-    margin-bottom: 60px;
-    justify-content: center;
-}
-
 .hero-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -619,7 +637,7 @@ section {
 
 .page-intro {
     padding-top: 25px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .page-intro .section-header {
@@ -668,13 +686,13 @@ section {
 }
 
 /* ========================================
-   8. FEATURE / PRICE CARD SYSTEM
+   8. FEATURE / CARD SYSTEM
 ======================================== */
 
 .feature-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    padding: 32px 28px; /* was 40px */
+    padding: 32px 28px;
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -724,7 +742,7 @@ section {
 }
 
 .feature-main {
-    margin-bottom: 24px; /* was 32px */
+    margin-bottom: 24px;
 }
 
 .feature-title {
@@ -763,7 +781,7 @@ section {
     gap: 16px;
     padding-top: 32px;
     border-top: 1px solid var(--border-color);
-    margin-top: 24px; /* was not here, added this */
+    margin-top: 24px;
 }
 
 .feature-detail-card {
@@ -805,7 +823,7 @@ section {
    9. HOMEPAGE / GENERAL SECTIONS
 ======================================== */
 
-/* Services */
+/* Approach */
 
 .approach-section {
     background: var(--bg-card);
@@ -1204,7 +1222,7 @@ section {
 }
 
 /* ========================================
-   11. BOOKS / FEATURED BOOK / SHARED CARDS
+   11. BOOKS / SHARED CARDS
 ======================================== */
 
 .book-feature-content.centered {
@@ -1234,12 +1252,6 @@ section {
 .book-description p {
     margin-bottom: 16px;
     line-height: 1.6;
-}
-
-.book-actions {
-    justify-content: center;
-    margin-top: 24px;
-    flex-wrap: wrap;
 }
 
 .book-actions .btn {
@@ -1335,7 +1347,7 @@ section {
 }
 
 /* ========================================
-   12. ABOUT / THANK YOU / SPECIAL PAGE OVERRIDES
+   12. ABOUT / THANK YOU / SPECIAL OVERRIDES
 ======================================== */
 
 .about-approach .hero-grid,
@@ -1574,7 +1586,7 @@ section {
 
 .footer-method-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 14px;
     justify-content: center;
     margin-top: 8px;
@@ -1625,7 +1637,7 @@ section {
 }
 
 /* ========================================
-   15. BLOG
+   15. BLOG / POST
 ======================================== */
 
 .blog-page-section {
@@ -1777,6 +1789,103 @@ section {
     font-weight: 600;
 }
 
+/* Post */
+
+.post-page-section {
+    padding: 16px 0 80px;
+}
+
+.post-article {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 32px 28px;
+}
+
+.post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+.post-content>*:first-child {
+    margin-top: 0;
+}
+
+.post-content p {
+    margin-bottom: 1.2em;
+    color: var(--text-secondary);
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    margin-top: 1.8em;
+    margin-bottom: 0.6em;
+    color: var(--text-primary);
+}
+
+.post-content h2 {
+    font-size: 2rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+}
+
+.post-content h4 {
+    font-size: 1.3rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin: 1em 0 1.2em 1.5em;
+    color: var(--text-secondary);
+}
+
+.post-content li {
+    margin-bottom: 0.5em;
+}
+
+.post-content em {
+    font-style: italic;
+}
+
+.post-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.post-content blockquote {
+    margin: 1.5em 0;
+    padding: 0.75em 1em;
+    border-left: 3px solid var(--gold-primary);
+    background: rgba(184, 134, 11, 0.08);
+    color: var(--text-primary);
+}
+
+.post-content a {
+    color: var(--gold-light);
+    text-decoration: underline;
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 2em 0;
+}
+
 /* ========================================
    16. RESPONSIVE
 ======================================== */
@@ -1802,6 +1911,20 @@ section {
 
     .logo {
         font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section.page-intro {
+        padding-top: 40px;
+    }
+
+    .page-hero {
+        padding: 30px 0 10px;
+    }
+
+    .blog-page-section {
+        padding-top: 10px;
     }
 }
 
@@ -1856,8 +1979,10 @@ section {
 }
 
 @media (max-width: 768px) {
-    section {
-        padding: 60px 0; /* was 80 */
+
+    section,
+    .section {
+        padding: 60px 0;
     }
 
     .section.page-intro {
@@ -1865,12 +1990,12 @@ section {
         padding-bottom: 24px;
     }
 
-    /*.section:not(.page-intro) {
-        padding: 20px 0;
-    }*/
-
     .hero {
         padding: 100px 0 60px;
+    }
+
+    .page-hero {
+        padding-top: 100px;
     }
 
     .hero-stats {
@@ -1976,25 +2101,19 @@ section {
     }
 
     .footer-method-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-method-card {
         min-height: auto;
     }
-}
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .section.page-intro {
-        padding-top: 40px;
+    .post-article {
+        padding: 24px 20px;
     }
 
-    .page-hero {
-        padding: 30px 0 10px;
-    }
-
-    .blog-page-section {
-        padding-top: 10px;
+    .post-content {
+        font-size: 1rem;
     }
 }
 
@@ -2091,6 +2210,10 @@ section {
     .book-description p {
         margin-bottom: 14px;
     }
+
+    .footer-method-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1099px) {
@@ -2103,200 +2226,4 @@ section {
     .grid-2x2 {
         grid-template-columns: repeat(4, 1fr) !important;
     }
-}
-
-@media (max-width: 768px) {
-    .page-hero {
-        padding-top: 100px;
-    }
-}
-.post-page-section {
-    padding: 16px 0 80px;
-}
-
-.post-article {
-    max-width: 800px;
-    margin: 0 auto;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 18px;
-    padding: 32px 28px;
-}
-
-.post-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-}
-
-/*.post-content {
-    color: var(--text-primary);
-    line-height: 1.8;
-    font-size: 1.05rem;
-}*/
-
-.post-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: var(--text-secondary);
-}
-
-.post-content>*:first-child {
-    margin-top: 0;
-}
-
-.post-content p {
-    margin: 0 0 1.25em;
-    color: var(--text-secondary);
-}
-
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-    margin: 1.8em 0 0.7em;
-    color: var(--text-primary);
-}
-
-.post-content h2 {
-    font-size: 2rem;
-}
-
-.post-content h3 {
-    font-size: 1.6rem;
-}
-
-.post-content h4 {
-    font-size: 1.3rem;
-}
-
-.post-content ul,
-.post-content ol {
-    margin: 0 0 1.25em 1.5em;
-    color: var(--text-secondary);
-}
-
-.post-content li {
-    margin-bottom: 0.5em;
-}
-
-.post-content blockquote {
-    margin: 1.5em 0;
-    padding: 0.75em 1em;
-    border-left: 3px solid var(--gold-primary);
-    background: rgba(184, 134, 11, 0.08);
-    color: var(--text-primary);
-}
-
-.post-content a {
-    color: var(--gold-light);
-    text-decoration: underline;
-}
-
-.post-content strong {
-    color: var(--text-primary);
-    font-weight: 600;
-}
-
-.post-content hr {
-    border: 0;
-    border-top: 1px solid var(--border-color);
-    margin: 2em 0;
-}
-
-@media (max-width: 768px) {
-    .post-article {
-        padding: 24px 20px;
-    }
-
-    .post-content {
-        font-size: 1rem;
-    }
-}
-
-/* Paragraphs */
-.post-content p {
-    margin-bottom: 1.2em;
-}
-
-/* Headings */
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-    margin-top: 1.8em;
-    margin-bottom: 0.6em;
-    color: var(--text-primary);
-}
-
-.post-content h2 {
-    font-size: 2rem;
-}
-
-.post-content h3 {
-    font-size: 1.5rem;
-}
-
-/* Lists */
-.post-content ul,
-.post-content ol {
-    margin: 1em 0 1.2em 1.5em;
-}
-
-.post-content li {
-    margin-bottom: 0.5em;
-}
-
-/* Emphasis */
-.post-content strong {
-    color: var(--text-primary);
-    font-weight: 600;
-}
-
-.post-content em {
-    font-style: italic;
-}
-
-/* Blockquotes (for future use) */
-.post-content blockquote {
-    margin: 1.5em 0;
-    padding-left: 1em;
-    border-left: 3px solid var(--gold-primary);
-    color: var(--text-primary);
-}
-
-/* Links */
-.post-content a {
-    color: var(--gold-light);
-    text-decoration: underline;
-}
-
-/* Horizontal rules */
-.post-content hr {
-    margin: 2em 0;
-    border: none;
-    border-top: 1px solid var(--border-color);
-}
-
-.section-actions {
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.book-actions {
-    margin-top: 28px;
-}
-
-.center-actions {
-    justify-content: center;
-}
-
-.hero-actions,
-.book-actions,
-.section-actions {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
 }
