@@ -4,16 +4,14 @@ title: Blog | Scripture Examined
 permalink: /blog/
 ---
 
-<section class="section page-intro blog-intro">
+<section class="page-hero">
   <div class="container">
-    <div class="section-header centered">
-      <div class="section-label">Scripture Examined</div>
-      <h1 class="section-title">Blog</h1>
-      <p class="section-desc">
-        Text-driven studies, passage work, and word studies. New posts published
-        every Wednesday.
-      </p>
-    </div>
+    <p class="section-label">Scripture Examined</p>
+    <h1>Blog</h1>
+    <p class="page-intro">
+      Text-driven studies, passage work, and word studies. New posts published
+      every Wednesday.
+    </p>
   </div>
 </section>
 
@@ -35,7 +33,6 @@ permalink: /blog/
         <button class="filter-btn is-active" type="button" data-filter="all">
           All
         </button>
-
         {% for category in unique_categories %}
         <button
           class="filter-btn"
@@ -56,9 +53,8 @@ permalink: /blog/
       <article class="blog-card" data-category="{{ category_slugs | strip }}">
         <div class="blog-card-inner">
           <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-
           <h3 class="blog-card-title">
-            <a href="{{ post.url | relative_url }}"> {{ post.title }} </a>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h3>
 
           {% if post.categories and post.categories.size > 0 %}
@@ -78,7 +74,6 @@ permalink: /blog/
           </a>
         </div>
       </article>
-
       {% endfor %}
     </div>
 
