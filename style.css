@@ -90,7 +90,7 @@ img {
 }
 
 section {
-    padding: 50px 0;
+    padding: 80px 0; /* was 50 */
     scroll-margin-top: 100px;
 }
 
@@ -214,7 +214,7 @@ section {
 .section-header {
     text-align: center;
     max-width: 600px;
-    margin: 110px auto 30px;
+    margin: 0 auto 40px; /* was 110px auto 30px */  
 }
 
 .section-header.centered {
@@ -504,7 +504,7 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 50px 0 80px;
+    padding: 120px 0 80px; /* was 50px 0 80px; */
     overflow: hidden;
 }
 
@@ -574,8 +574,6 @@ section {
 }
 
 .hero-actions {
-    display: flex;
-    gap: 16px;
     margin-top: 30px;
     margin-bottom: 60px;
     justify-content: center;
@@ -676,7 +674,7 @@ section {
 .feature-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    padding: 40px;
+    padding: 32px 28px; /* was 40px */
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -726,7 +724,7 @@ section {
 }
 
 .feature-main {
-    margin-bottom: 32px;
+    margin-bottom: 24px; /* was 32px */
 }
 
 .feature-title {
@@ -765,6 +763,7 @@ section {
     gap: 16px;
     padding-top: 32px;
     border-top: 1px solid var(--border-color);
+    margin-top: 24px; /* was not here, added this */
 }
 
 .feature-detail-card {
@@ -1238,9 +1237,7 @@ section {
 }
 
 .book-actions {
-    display: flex;
     justify-content: center;
-    gap: 12px;
     margin-top: 24px;
     flex-wrap: wrap;
 }
@@ -1341,7 +1338,6 @@ section {
    12. ABOUT / THANK YOU / SPECIAL PAGE OVERRIDES
 ======================================== */
 
-.about-approach .hero-visual,
 .about-approach .hero-grid,
 .about-approach .hero-visual {
     display: block;
@@ -1861,7 +1857,7 @@ section {
 
 @media (max-width: 768px) {
     section {
-        padding: 80px 0;
+        padding: 60px 0; /* was 80 */
     }
 
     .section.page-intro {
@@ -1869,9 +1865,9 @@ section {
         padding-bottom: 24px;
     }
 
-    .section:not(.page-intro) {
+    /*.section:not(.page-intro) {
         padding: 20px 0;
-    }
+    }*/
 
     .hero {
         padding: 100px 0 60px;
@@ -2095,10 +2091,6 @@ section {
     .book-description p {
         margin-bottom: 14px;
     }
-
-    .footer-method-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (min-width: 600px) and (max-width: 1099px) {
@@ -2138,10 +2130,18 @@ section {
     margin-bottom: 24px;
 }
 
-.post-content {
+/*.post-content {
     color: var(--text-primary);
     line-height: 1.8;
     font-size: 1.05rem;
+}*/
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
 }
 
 .post-content>*:first-child {
@@ -2216,14 +2216,6 @@ section {
     }
 }
 
-.post-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: var(--text-secondary);
-}
-
 /* Paragraphs */
 .post-content p {
     margin-bottom: 1.2em;
@@ -2289,9 +2281,22 @@ section {
 }
 
 .section-actions {
-    display: flex;
     justify-content: center;
-    gap: 16px;
     margin-top: 30px;
+}
+
+.book-actions {
+    margin-top: 28px;
+}
+
+.center-actions {
+    justify-content: center;
+}
+
+.hero-actions,
+.book-actions,
+.section-actions {
+    display: flex;
+    gap: 16px;
     flex-wrap: wrap;
 }
