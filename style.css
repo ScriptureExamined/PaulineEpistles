@@ -611,8 +611,8 @@ section,
 /* Internal page hero / intro */
 
 .page-intro {
-    padding-top: 16px;
-    padding-bottom: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .page-intro .section-header {
@@ -1903,8 +1903,8 @@ section,
     }
 
     .section.page-intro {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 100px;
+        padding-bottom: 16px;
     }
 
     .hero {
@@ -1980,7 +1980,7 @@ section,
     }
 
     .section-header {
-        margin-bottom: 20px !important;
+        margin-bottom: 16px !important;
     }
 
     .section-content {
