@@ -1834,7 +1834,8 @@ section,
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .section.page-intro {
-        padding-top: 40px;
+        padding-top: 115px;
+        padding-bottom: 16px;
     }
 
     .page-hero {
