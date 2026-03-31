@@ -31,7 +31,7 @@ This raises necessary questions:
 
 These are not abstract questions. They come directly from the text.
 
-Each week, new posts will examine specific passages, terms, and themes—allowing Scripture to define its own framework rather than forcing it into ours.
+Each week, new posts will examine specific passages, terms, and themes, allowing Scripture to define its own framework rather than forcing it into ours.
 
 The goal is not to persuade by rhetoric.
 
