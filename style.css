@@ -85,7 +85,7 @@ img {
 
 section,
 .section {
-    padding: 80px 0;
+    padding: 72px 0;
     scroll-margin-top: 100px;
 }
 
@@ -219,13 +219,13 @@ section,
 .section-header {
     text-align: center;
     max-width: 600px;
-    margin: 0 auto 40px;
+    margin: 0 auto 32px;
 }
 
 .section-header.centered {
     text-align: center;
     max-width: 900px;
-    margin: 0 auto 40px;
+    margin: 0 auto 32px;
 }
 
 .section-label {
@@ -611,8 +611,8 @@ section,
 /* Internal page hero / intro */
 
 .page-intro {
-    padding-top: 25px;
-    padding-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
 }
 
 .page-intro .section-header {
@@ -667,7 +667,7 @@ section,
 .feature-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    padding: 32px 28px;
+    padding: 28px 24px;
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -717,7 +717,7 @@ section,
 }
 
 .feature-main {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .feature-title {
@@ -754,13 +754,13 @@ section,
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    padding-top: 32px;
+    padding-top: 24px;
     border-top: 1px solid var(--border-color);
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .feature-detail-card {
-    padding: 20px;
+    padding: 18px;
     background: var(--bg-dark);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
@@ -1559,7 +1559,7 @@ section,
 ======================================== */
 
 .blog-page-section {
-    padding: 16px 0 80px;
+    padding: 8px 0 72px;
 }
 
 .blog-toolbar {
@@ -1710,7 +1710,7 @@ section,
 /* Post */
 
 .post-page-section {
-    padding: 16px 0 80px;
+    padding: 8px 0 72px;
 }
 
 .post-article {
@@ -1899,12 +1899,12 @@ section,
 
     section,
     .section {
-        padding: 60px 0;
+        padding: 48px 0;
     }
 
     .section.page-intro {
-        padding-top: 100px;
-        padding-bottom: 24px;
+        padding-top: 92px;
+        padding-bottom: 20px;
     }
 
     .hero {
@@ -1980,7 +1980,7 @@ section,
     }
 
     .section-header {
-        margin-bottom: 16px !important;
+        margin-bottom: 20px !important;
     }
 
     .section-content {
