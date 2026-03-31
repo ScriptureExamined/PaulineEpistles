@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function openModal(trigger) {
-    const label = trigger.dataset.sampleLabel || "Sample Outline";
+    const label = trigger.dataset.sampleLabel || "Outline";
     const title = trigger.dataset.sampleTitle || "";
     const intro = trigger.dataset.sampleIntro || "";
 
