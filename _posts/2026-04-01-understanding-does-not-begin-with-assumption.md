@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Does Not Begin With Assumption"
 date: 2026-04-01
-categories: tutorials
+categories: Tutorials
 tags: [scripture, bible study, interpretation, methodology, paul]
 ---
 
