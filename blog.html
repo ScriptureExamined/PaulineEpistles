@@ -17,8 +17,8 @@ permalink: /blog/
 
 <section class="blog-page-section">
   <div class="container">
-    {% assign sorted_posts = site.posts | reverse %} {% assign all_categories =
-    "" | split: "" %} {% for post in sorted_posts %} {% for category in
+    {% assign sorted_posts = site.posts %} {% assign all_categories = "" |
+    split: "" %} {% for post in sorted_posts %} {% for category in
     post.categories %} {% assign all_categories = all_categories | push:
     category %} {% endfor %} {% endfor %} {% assign unique_categories =
     all_categories | uniq | sort %}
