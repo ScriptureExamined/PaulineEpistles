@@ -33,7 +33,7 @@ This changes how we read, and requires restraint. It requires allowing a passage
 
 This is especially important when reading Paul, because Paul is precise.
 
-When he speaks of God’s will, he does not describe uncertainty. When he speaks of purpose, he does not suggest possibility. When he speaks of operation, he does not leave room for interruption. These are not conclusions imposed on his writing—they are drawn from it.
+When he speaks of God’s will, he does not describe uncertainty. When he speaks of purpose, he does not suggest possibility. When he speaks of operation, he does not leave room for interruption. These are not conclusions imposed on his writing, they are drawn from it.
 
 But they can only be seen if the reader is willing to let the text lead.
 
