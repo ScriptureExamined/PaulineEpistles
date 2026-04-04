@@ -83,6 +83,53 @@ title: The Two Gospels | Scripture Examined
   </div>
 </section>
 
+<section class="section book-diary">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Project Diary</div>
+      <h2 class="section-title">Research Notes & Updates</h2>
+      <p class="section-desc">Ongoing updates and findings from the current study.</p>
+    </div>
+
+    <div class="blog-posts-grid">
+      {% for post in site.posts %}
+        {% if post.category == "two-gospels" %}
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+              <h3 class="blog-card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              {% if post.excerpt %}
+                <p class="blog-card-excerpt">
+                  {{ post.excerpt | strip_html | truncate: 160 }}
+                </p>
+              {% endif %}
+              <a class="blog-read-more" href="{{ post.url | relative_url }}">Read Update</a>
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section book-cta">
+  <div class="container">
+    <div class="centered-content">
+      <div class="section-label">In Development</div>
+      <h2 class="section-title gold">The Study Is Ongoing</h2>
+
+      <p>
+        <em>The Two Gospels</em> is currently in development. Updates and availability will be posted here as the study progresses.
+      </p>
+
+      <div class="book-actions center-actions">
+        <a href="books.html" class="btn btn-outline">Back to Books</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section book-overview">
   <div class="container">
     <div class="section-content centered-content">
@@ -177,52 +224,7 @@ title: The Two Gospels | Scripture Examined
   </div>
 </section>
 
-<section class="section book-diary">
-  <div class="container">
-    <div class="section-header centered">
-      <div class="section-label">Project Diary</div>
-      <h2 class="section-title">Research Notes & Updates</h2>
-      <p class="section-desc">Ongoing updates and findings from the current study.</p>
-    </div>
 
-    <div class="blog-posts-grid">
-      {% for post in site.posts %}
-        {% if post.category == "two-gospels" %}
-          <article class="blog-card">
-            <div class="blog-card-inner">
-              <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-              <h3 class="blog-card-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
-              {% if post.excerpt %}
-                <p class="blog-card-excerpt">
-                  {{ post.excerpt | strip_html | truncate: 160 }}
-                </p>
-              {% endif %}
-              <a class="blog-read-more" href="{{ post.url | relative_url }}">Read Update</a>
-            </div>
-          </article>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-<section class="section book-cta">
-  <div class="container">
-    <div class="centered-content">
-      <div class="section-label">In Development</div>
-      <h2 class="section-title gold">The Study Is Ongoing</h2>
-
-      <p>
-        <em>The Two Gospels</em> is currently in development. Updates and availability will be posted here as the study progresses.
-      </p>
-
-      <div class="book-actions center-actions">
-        <a href="books.html" class="btn btn-outline">Back to Books</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <div class="sample-modal-overlay" id="sampleModalOverlay"></div>
 
