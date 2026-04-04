@@ -147,9 +147,9 @@ section,
     text-align: center;
 }
 
-/*.gold {
+.gold {
     color: var(--gold-primary);
-}*/
+}
 
 /* ========================================
    4. GLOBAL BUTTONS / ACTION ROWS
