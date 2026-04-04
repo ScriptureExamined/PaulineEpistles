@@ -177,6 +177,36 @@ title: The Two Gospels | Scripture Examined
   </div>
 </section>
 
+<section class="section book-diary">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Project Diary</div>
+      <h2 class="section-title">Research Notes & Updates</h2>
+      <p class="section-desc">Ongoing updates and findings from the current study.</p>
+    </div>
+
+    <div class="blog-posts-grid">
+      {% for post in site.posts %}
+        {% if post.category == "two-gospels" %}
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+              <h3 class="blog-card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              {% if post.excerpt %}
+                <p class="blog-card-excerpt">
+                  {{ post.excerpt | strip_html | truncate: 160 }}
+                </p>
+              {% endif %}
+              <a class="blog-read-more" href="{{ post.url | relative_url }}">Read Update</a>
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
 <section class="section book-cta">
   <div class="container">
     <div class="centered-content">
@@ -194,7 +224,6 @@ title: The Two Gospels | Scripture Examined
   </div>
 </section>
 
-<!-- MODAL (must be at bottom of page) -->
 <div class="sample-modal-overlay" id="sampleModalOverlay"></div>
 
 <div
