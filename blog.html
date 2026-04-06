@@ -17,11 +17,16 @@ permalink: /blog/
 
 <section class="blog-page-section">
   <div class="container">
-    {% assign sorted_posts = site.posts %} {% assign all_categories = "" |
-    split: "" %} {% for post in sorted_posts %} {% for category in
-    post.categories %} {% assign all_categories = all_categories | push:
-    category %} {% endfor %} {% endfor %} {% assign unique_categories =
-    all_categories | uniq | sort %}
+    {% assign sorted_posts = site.posts %} 
+    {% assign all_categories = "" | split: "" %} 
+    {% for post in sorted_posts %} 
+      {% unless post.category == "two-gospels" %}
+        {% for category in post.categories %} 
+          {% assign all_categories = all_categories | push: category %} 
+        {% endfor %} 
+      {% endunless %}
+    {% endfor %} 
+    {% assign unique_categories = all_categories | uniq | sort %}
 
     <div class="blog-toolbar">
       <div class="blog-toolbar-left">
@@ -46,7 +51,9 @@ permalink: /blog/
     </div>
 
     <div class="blog-posts-grid" id="blogPostsGrid">
-      {% for post in sorted_posts %} {% assign category_slugs = "" %} {% for
+      {% for post in sorted_posts %} 
+      {% if post.category != "two-gospels" %}
+      {% assign category_slugs = "" %} {% for
       category in post.categories %} {% assign category_slugs = category_slugs |
       append: category | slugify | append: " " %} {% endfor %}
 
@@ -74,6 +81,7 @@ permalink: /blog/
           </a>
         </div>
       </article>
+      {% endif %}
       {% endfor %}
     </div>
 
