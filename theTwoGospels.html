@@ -6,7 +6,7 @@ title: The Two Gospels | Scripture Examined
 <section class="section page-intro book-intro">
   <div class="container">
     <div class="section-header centered">
-      <div class="section-label">Current Study</div>
+      <div class="section-label">Available Study</div>
       <h1 class="section-title gold">The Two Gospels</h1>
       <p class="section-desc">
         A text-driven study examining the distinction between what Peter and
@@ -21,8 +21,9 @@ title: The Two Gospels | Scripture Examined
             A Text-Driven Examination
           </div>
           <span class="feature-subtitle" style="display: block">
-            If God’s will is already in operation, how should we understand the
-            different messages presented in Scripture?
+            What if Scripture presents not one uniform gospel message, but a
+            meaningful distinction between the gospel of the circumcision and
+            the gospel of the uncircumcision?
           </span>
         </div>
 
@@ -61,7 +62,13 @@ title: The Two Gospels | Scripture Examined
         </div>
 
         <div class="book-actions center-actions">
-          <a href="#" class="btn btn-primary"> Coming Soon </a>
+          <a
+            href="files/The-Two-Gospels.pdf"
+            class="btn btn-primary"
+            download="The-Two-Gospels.pdf"
+          >
+            Download PDF
+          </a>
 
           <a
             href="#"
@@ -74,6 +81,7 @@ title: The Two Gospels | Scripture Examined
               {"label":"Galatians 2:7","text":"A direct look at the gospel of the circumcision and the gospel of the uncircumcision."},
               {"label":"Peter’s Proclamation","text":"What Peter announces concerning Israel, the kingdom, and expectation."},
               {"label":"Paul’s Evangel","text":"How Paul presents justification, grace, and reconciliation among the nations."},
+              {"label":"Two Administrations","text":"How Scripture presents different divine operations for Israel and the nations."},
               {"label":"Doctrinal Implications","text":"What changes when these distinctions are allowed to stand."},
               {"label":"Conclusion","text":"Returning to the wording of Scripture rather than inherited assumptions."}
             ]'
@@ -86,6 +94,9 @@ title: The Two Gospels | Scripture Examined
   </div>
 </section>
 
+<!--
+PROJECT DIARY SECTION - SAVED FOR FUTURE PROJECTS
+
 <section class="section book-diary">
   <div class="container">
     <div class="section-header centered">
@@ -97,62 +108,38 @@ title: The Two Gospels | Scripture Examined
     </div>
 
     <div class="blog-posts-grid">
-      {% for post in site.posts %} {% if post.category == "two-gospels" %}
-      <article class="blog-card">
-        <div class="blog-card-inner">
-          <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-          <h3 class="blog-card-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          {% if post.excerpt %}
-          <p class="blog-card-excerpt">
-            {{ post.excerpt | strip_html | truncate: 160 }}
-          </p>
-          {% endif %}
-          <a class="blog-read-more" href="{{ post.url | relative_url }}"
-            >Read Update</a
-          >
-        </div>
-      </article>
-      {% endif %} {% endfor %}
+      {% for post in site.posts %}
+        {% if post.category == "two-gospels" %}
+          <article class="blog-card">
+            <div class="blog-card-inner">
+              <p class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+              <h3 class="blog-card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              {% if post.excerpt %}
+                <p class="blog-card-excerpt">
+                  {{ post.excerpt | strip_html | truncate: 160 }}
+                </p>
+              {% endif %}
+              <a class="blog-read-more" href="{{ post.url | relative_url }}">
+                Read Update
+              </a>
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
-<section class="section book-cta">
-  <div class="container">
-    <div class="centered-content">
-      <div class="section-label">In Development</div>
-      <h2 class="section-title gold">The Study Is Ongoing</h2>
 
-      <p>
-        <em>The Two Gospels</em> is currently in development. Updates and
-        availability will be posted here as the study progresses.
-      </p>
-
-      <div class="book-actions center-actions">
-        <a href="books.html" class="btn btn-outline">Back to Books</a>
-      </div>
-    </div>
-  </div>
-</section>
+END PROJECT DIARY SECTION
+-->
 
 <section class="section book-overview">
   <div class="container">
     <div class="section-content centered-content">
       <div class="section-label">Overview</div>
       <h2 class="section-title">What This Study Examines</h2>
-
-      <p>
-        In <em>The Will of God</em>, the focus was on how Scripture describes
-        God’s will—not as uncertain, hidden, or dependent on human discovery,
-        but as active, deliberate, and effective.
-      </p>
-
-      <p>
-        That conclusion raises a further question. If God’s will is already in
-        operation, how should we understand the different messages presented
-        within Scripture?
-      </p>
 
       <p>
         <em>The Two Gospels</em> examines the distinction identified in
@@ -162,9 +149,20 @@ title: The Two Gospels | Scripture Examined
       </p>
 
       <p>
-        Rather than merging these messages into a single system, this study
+        Much of modern teaching treats the gospel as one uniform message
+        throughout Scripture. This study tests that assumption by comparing what
+        Peter proclaimed with what Paul proclaimed.
+      </p>
+
+      <p>
+        Rather than merging these messages into a single system, this work
         follows the language as written, allowing each proclamation to stand
         within its own context.
+      </p>
+
+      <p>
+        Particular attention is given to audience, timing, expectation, Israel’s
+        kingdom promises, and the distinct calling of the body of Christ.
       </p>
     </div>
   </div>
@@ -248,6 +246,32 @@ title: The Two Gospels | Scripture Examined
   </div>
 </section>
 
+<section class="section book-cta">
+  <div class="container">
+    <div class="centered-content">
+      <div class="section-label">Begin Here</div>
+      <h2 class="section-title gold">Download the Study</h2>
+
+      <p>
+        Read <em>The Two Gospels</em> and examine the passages alongside the
+        text of Scripture.
+      </p>
+
+      <div class="book-actions center-actions">
+        <a
+          href="files/The-Two-Gospels.pdf"
+          class="btn btn-primary"
+          download="The-Two-Gospels.pdf"
+        >
+          Download PDF
+        </a>
+
+        <a href="books.html" class="btn btn-outline">Back to Books</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="sample-modal-overlay" id="sampleModalOverlay"></div>
 
 <div
@@ -264,6 +288,7 @@ title: The Two Gospels | Scripture Examined
   >
     &times;
   </button>
+
   <div class="sample-modal-content">
     <div class="section-label">Outline</div>
     <h2 id="sampleModalTitle" class="section-title gold">The Two Gospels</h2>
@@ -271,27 +296,38 @@ title: The Two Gospels | Scripture Examined
       This preview provides a brief outline of the study’s direction and
       emphasis.
     </p>
+
     <div class="sample-outline">
       <p>
         <span class="gold emphasis">Introduction:</span> Why the assumption of a
         single unified message deserves closer examination.
       </p>
+
       <p>
         <span class="gold emphasis">Galatians 2:7:</span> A direct look at the
         gospel of the circumcision and the gospel of the uncircumcision.
       </p>
+
       <p>
         <span class="gold emphasis">Peter’s Proclamation:</span> What Peter
         announces concerning Israel, the kingdom, and expectation.
       </p>
+
       <p>
         <span class="gold emphasis">Paul’s Evangel:</span> How Paul presents
         justification, grace, and reconciliation among the nations.
       </p>
+
+      <p>
+        <span class="gold emphasis">Two Administrations:</span> How Scripture
+        presents different divine operations for Israel and the nations.
+      </p>
+
       <p>
         <span class="gold emphasis">Doctrinal Implications:</span> What changes
         when these distinctions are allowed to stand.
       </p>
+
       <p>
         <span class="gold emphasis">Conclusion:</span> Returning to the wording
         of Scripture rather than inherited assumptions.
