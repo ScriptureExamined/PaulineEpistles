@@ -1254,6 +1254,17 @@ section,
     width: 100%;
 }
 
+.library-list {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.library-book {
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
