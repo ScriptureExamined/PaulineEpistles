@@ -2156,3 +2156,9 @@ section,
         grid-template-columns: repeat(4, 1fr) !important;
     }
 }
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
