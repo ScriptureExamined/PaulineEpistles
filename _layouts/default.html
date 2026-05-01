@@ -225,6 +225,8 @@ layout: none
             reserved.
           </p>
 
+          <a href="{{ '/legal/' | relative_url }}">Privacy Policy & Terms</a>
+
           <div class="footer-socials">
             <a
               href="https://x.com/"
@@ -358,5 +360,41 @@ layout: none
     {% if page.load_web3forms %}
     <script src="https://web3forms.com/client/script.js" async defer></script>
     {% endif %}
+
+    <div
+      id="cookieNotice"
+      class="cookie-notice"
+      role="dialog"
+      aria-live="polite"
+    >
+      <div class="cookie-notice-inner">
+        <p>
+          This website uses cookies and Google Analytics to understand site
+          usage and improve performance. By continuing to use this site, you
+          acknowledge our
+          <a href="{{ '/legal/' | relative_url }}">Privacy Policy</a>.
+        </p>
+
+        <button id="cookieAccept" class="cookie-button" type="button">
+          Accept
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const notice = document.getElementById("cookieNotice");
+        const accept = document.getElementById("cookieAccept");
+
+        if (!localStorage.getItem("cookieNoticeAccepted")) {
+          notice.classList.add("show");
+        }
+
+        accept.addEventListener("click", function () {
+          localStorage.setItem("cookieNoticeAccepted", "true");
+          notice.classList.remove("show");
+        });
+      });
+    </script>
   </body>
 </html>
