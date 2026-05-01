@@ -1926,6 +1926,11 @@ section,
         padding: 100px 0 60px;
     }
 
+    /* ✅ FIX MOVED HERE */
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+    }
+
     .page-hero {
         padding-top: 100px;
     }
@@ -2043,122 +2048,5 @@ section,
         font-size: 1rem;
         line-height: 1.75;
         max-width: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    .blog-page-section {
-        padding: 24px 0 64px;
-    }
-
-    .blog-posts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .blog-card-inner {
-        padding: 20px;
-    }
-
-    .filter-btn {
-        padding: 9px 14px;
-    }
-}
-
-@media (max-width: 600px) {
-    .approach-section-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .why-image-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 8px;
-    }
-
-    .why-thumb:nth-child(1) {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    .why-thumb:nth-child(2),
-    .why-thumb:nth-child(3),
-    .why-thumb:nth-child(4),
-    .why-thumb:nth-child(5) {
-        aspect-ratio: 1;
-    }
-}
-
-@media (max-width: 480px) {
-    .feature-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .feature-content {
-        text-align: center;
-    }
-
-    .feature-visual {
-        order: -1;
-    }
-
-    .book-cover-frame {
-        max-width: 220px;
-        width: 100%;
-        padding: 8px;
-        margin: 0 auto;
-    }
-
-    .book-cover {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .book-actions {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .book-actions .btn {
-        width: 100%;
-        max-width: 240px;
-    }
-
-    .featured-book {
-        padding-top: 20px;
-        padding-bottom: 32px;
-    }
-
-    .feature-content .section-title,
-    .feature-content .book-title {
-        margin-bottom: 12px;
-    }
-
-    .book-description p {
-        margin-bottom: 14px;
-    }
-
-    .footer-method-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1099px) {
-    .grid-2x2 {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-@media (min-width: 1100px) {
-    .grid-2x2 {
-        grid-template-columns: repeat(4, 1fr) !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-grid {
-        grid-template-columns: 1fr !important;
     }
 }
